@@ -173,33 +173,53 @@ namespace assignment05
             #region Q2 part 2
             ///Add an internal int copiesInStock = 5; field to Book. Print it from Main. 
             // Does it compile? Why?
+            /*
+                        class Book
+                    {
+                        internal int Copiesinstock = 5;
+                    }
 
+
+                    static void Main(string[] args)
+                    {
+                        Book book = new Book();
+
+                        Console.WriteLine(book.Copiesinstock);
+
+
+                    }
+            */
+
+            //run code success
+
+
+
+
+
+            #endregion
+
+            #region Q3 part 2
+            ///-Add a public string Title; field to Book. Set it and print it from Main.  
             class Book
         {
-            internal int Copiesinstock = 5;
+            public string Title;
         }
-
-
         static void Main(string[] args)
         {
+
+
+
+
             Book book = new Book();
 
-            Console.WriteLine(book.Copiesinstock);
+            book.Title = "C# Programming";
 
-
+            Console.WriteLine(book.Title);
         }
 
 
-        //run code success
 
-
-
-
-
-        #endregion
-
-
-
+            #endregion
 
 
 
