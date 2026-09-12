@@ -77,30 +77,57 @@ namespace assignment05
             #region Q3
             ///Using the PrintBookInfo method from the question above, call it by naming 
             // the parameters, passing pages before title
+            /*
+                        static void Printbookinfo(string Title, int Pages = 300)
+                        {
 
-            static void Printbookinfo(string Title, int Pages = 300)
-            {
+                            Console.WriteLine($"title: {Title}, pages: {Pages}");
 
-                Console.WriteLine($"title: {Title}, pages: {Pages}");
+                        }
 
-            }
+                        static void Main(string[] args)
+                        {
 
-            static void Main(string[] args)
-            {
-
-                Printbookinfo(Pages: 150, Title: "cleancode");
-            }
+                            Printbookinfo(Pages: 150, Title: "cleancode");
+                        }
 
 
-        }
-
+                    }
+            */
 
 
             #endregion
 
 
 
+            #region Q4
+            ///4-Write a method PrintAllTitles(params string[] titles) that prints each title on its 
+            // own line. Call it with three book titles
 
+            static void printalltitles(params string [] Titles)
+            {
+                foreach (string title in Titles)
+                {
+                    Console.WriteLine(title);
+                }
+            }
+
+            static void Main(string[] args)
+            {
+
+
+                printalltitles("C# Programming", "Learn Python", "JavaScript");
+
+            }
+
+
+
+
+
+
+
+
+            #endregion
 
 
 
