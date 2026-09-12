@@ -47,7 +47,7 @@ namespace assignment05
             #region Q2 
             ///-Write a method PrintBookInfo(string title, int pages = 300) where pages is 
             //optional.Call it once with only a title, and once passing both a title and pages. 
-
+            /*
 
             static void Printbookinfo(string Title, int Pages = 300)
             {
@@ -66,7 +66,7 @@ namespace assignment05
                 Printbookinfo("C programming", 600);
             }
 
-
+            */
 
 
 
@@ -74,7 +74,29 @@ namespace assignment05
 
 
 
+            #region Q3
+            ///Using the PrintBookInfo method from the question above, call it by naming 
+            // the parameters, passing pages before title
 
+            static void Printbookinfo(string Title, int Pages = 300)
+            {
+
+                Console.WriteLine($"title: {Title}, pages: {Pages}");
+
+            }
+
+            static void Main(string[] args)
+            {
+
+                Printbookinfo(Pages: 150, Title: "cleancode");
+            }
+
+
+        }
+
+
+
+            #endregion
 
 
 
