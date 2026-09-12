@@ -103,22 +103,61 @@ namespace assignment05
             #region Q4
             ///4-Write a method PrintAllTitles(params string[] titles) that prints each title on its 
             // own line. Call it with three book titles
+            /*
+                        static void printalltitles(params string [] Titles)
+                        {
+                            foreach (string title in Titles)
+                            {
+                                Console.WriteLine(title);
+                            }
+                        }
 
-            static void printalltitles(params string [] Titles)
-            {
-                foreach (string title in Titles)
-                {
-                    Console.WriteLine(title);
-                }
-            }
-
-            static void Main(string[] args)
-            {
+                        static void Main(string[] args)
+                        {
 
 
-                printalltitles("C# Programming", "Learn Python", "JavaScript");
+                            printalltitles("C# Programming", "Learn Python", "JavaScript");
 
-            }
+                        }
+
+                        */
+
+
+
+
+
+
+            #endregion
+
+
+
+
+            #region Q1 part 2
+            ///-Add a private string password = "secret"; field to a Book class. Try to 
+            //print it from Main  (outside the class). What happens, and why?
+
+            class book
+        {
+            private string password = "Secret";
+        }
+
+        static void Main(string[] args)
+        {
+
+
+
+               book book = new book();
+
+            Console.WriteLine(book.password);
+
+
+
+
+
+        }
+
+
+
 
 
 
@@ -137,11 +176,6 @@ namespace assignment05
 
 
 
-
-
-
-
-
-        }
+    }
     }
 }
