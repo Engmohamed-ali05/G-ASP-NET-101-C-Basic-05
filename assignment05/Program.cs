@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Numerics;
 using System.Reflection;
 
 namespace assignment05
@@ -136,30 +137,30 @@ namespace assignment05
             ///-Add a private string password = "secret"; field to a Book class. Try to 
             //print it from Main  (outside the class). What happens, and why?
 
-            class book
-        {
-            private string password = "Secret";
-        }
+            /*       class book
+                {
+                    private string password = "Secret";
+                }
 
-        static void Main(string[] args)
-        {
-
-
-
-               book book = new book();
-
-            Console.WriteLine(book.password);
+                static void Main(string[] args)
+                {
 
 
 
+                       book book = new book();
 
-
-        }
+                    Console.WriteLine(book.password);
 
 
 
 
 
+                }
+            */
+
+
+
+            // result =>   error
 
 
 
@@ -169,6 +170,34 @@ namespace assignment05
             #endregion
 
 
+            #region Q2 part 2
+            ///Add an internal int copiesInStock = 5; field to Book. Print it from Main. 
+            // Does it compile? Why?
+
+            class Book
+        {
+            internal int Copiesinstock = 5;
+        }
+
+
+        static void Main(string[] args)
+        {
+            Book book = new Book();
+
+            Console.WriteLine(book.Copiesinstock);
+
+
+        }
+
+
+        //run code success
+
+
+
+
+
+        #endregion
+
 
 
 
@@ -177,5 +206,5 @@ namespace assignment05
 
 
     }
-    }
+}
 }
